@@ -29,11 +29,11 @@ bot.on("message", async message => {
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
   
-    if (cmd === `${prefix}ping`){
-        if(!message.member.hasPermission("MANAGE_MESSAGES"));
-        const ms = await message.channel.send("Calculando...");
-        const clientms = ms.createdTimestamp - message.createdTimestamp;
-        ms.edit('Meu Ping: ' + Math.round(bot.ping) + 'ms');
-    }
+   // if (cmd === `${prefix}ping`){
+   //     if(!message.member.hasPermission("MANAGE_MESSAGES"));
+  //      const ms = await message.channel.send("Calculando...");
+   //     const clientms = ms.createdTimestamp - message.createdTimestamp;
+    //    ms.edit('Meu Ping: ' + Math.round(bot.ping) + 'ms');
+  // }
 
 });
